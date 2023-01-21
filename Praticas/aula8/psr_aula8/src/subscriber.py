@@ -3,7 +3,7 @@
 import argparse
 
 def msgReceivedCallback(msg):
-    rospy.loginfo('Message received: ' + str(msg) + '\n')
+    rospy.loginfo('I received\n:' + str(msg) + '\n')
 
 
 def main():
@@ -26,7 +26,7 @@ def main():
     #.........................................
     #execute the node
     #.........................................
-    rospy spin()
+    rospy.spin()
 
     #.........................................
     #terminate the node
@@ -44,4 +44,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    main()#
